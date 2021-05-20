@@ -1,5 +1,7 @@
 # 自定义 excel 格式 导入导出
 
+![](https://raw.githubusercontent.com/devin-huang/sheet/main/demo.png)
+
 - JS 控制格式（单元格合并，样式）
 
 ## base
