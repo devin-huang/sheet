@@ -4,7 +4,7 @@
 
 ## base
 
-- 依赖 ![`xlsx`](https://www.npmjs.com/package/xlsx) ![`xlsx-style`](https://www.npmjs.com/package/xlsx-style) ![`file-saver`](https://www.npmjs.com/package/file-saver) 实现
+- 依赖 [`xlsx`](https://www.npmjs.com/package/xlsx) [`xlsx-style`](https://www.npmjs.com/package/xlsx-style) [`file-saver`](https://www.npmjs.com/package/file-saver) 实现
 
 - 支持导出格式： `csv` `xls` `xlsx` `json` `html`
 
