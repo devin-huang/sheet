@@ -10,6 +10,8 @@
 
 - 支持导出格式： `csv` `xls` `xlsx` `json` `html`
 
+- xlsx-style [单元格样式配置](https://www.jianshu.com/p/869375439fee)
+
 ### Compiles and hot-reloads for development
 
 ```
