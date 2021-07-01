@@ -7,6 +7,7 @@
 ## 重点注意：
 
 - `./cptable` 是xslx-style的依赖引起报错，所以必须要在webpack中; `fs: 'empty'` 是让项目支持引入fs
+
   ```
     防止将特定打包，而是在运行时从外部获取
     externals: {
