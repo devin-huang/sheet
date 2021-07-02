@@ -25,14 +25,14 @@
 </template>
 
 <script>
-import { mockData, mockHeader } from "./utils/mockData";
-import { exportExcel, impoerExcel } from "./utils/xlsxUtils.js";
+import { mockData, mockHeader } from "./utils/xlsx/data.js";
+import Sheet from "./utils/xlsx/index.js";
 
 export default {
   name: "App",
   methods: {
     importData() {
-      impoerExcel("#upload", "#excelView");
+      Sheet.import("#upload", "#excelView");
     },
     async exportStudent() {
       this.exportLoading = true;
@@ -44,11 +44,7 @@ export default {
           item.courseStr = item.courses.map((o) => o.name).join("，");
           item.classStr = item.classes.map((o) => o.name).join("，");
         });
-        await exportExcel(res.data, mockHeader, "学员信息表.xlsx", {
-          A2: {
-            fill: { fgColor: { rgb: "409F9F80" } },
-          },
-        });
+        await Sheet.export(res.data, mockHeader, "学员信息表.xlsx");
       } catch (error) {
         console.log(error);
       }
@@ -74,6 +70,7 @@ export default {
 }
 .devin-logo {
   border-radius: 50%;
+  width: 20%;
 }
 .import {
   background: #ffded2;
